@@ -16,3 +16,23 @@ Keywords: Pallets, Logistics 4.0, QR code, Computer vision, Warehouse 4.0
 
 # Instructions
 Run GrafostilGUI.py - links for instllation of requsted libraries are placed within the code
+
+Run specific functions:
+  from arsGrafostilBiblioteka import * #ukljuci sve fje iz arsGrafostill biblioteke
+  import cv2 as cv
+  # IP camera
+  ipAdresaKamere = 'rtsp://admin:password@IP_addrss:port/cam/realmonitor?channel=1@subtype=1'
+  ipAdresaKamere = 'rtsp://admin:password@IP_addrss:port/cam/realmonitor?channel=1@subtype=0' #shape:(2160, 3840, 3)
+  # USB camera
+  ipAdresaKamere = 0
+  cap = cv.VideoCapture(ipAdresaKamere)
+  return_value, image = cap.read()
+
+
+  data = '0044,04/33'
+  testQRimg = generateQR(data, False)
+  printQqCodeOnWinPrinter(testQRimg, False)
+  import cv2 as cv
+  cv.imwrite('img1.jpg',testQRimg)
+  data, locations = readQRcode(testQRimg, False)
+    
