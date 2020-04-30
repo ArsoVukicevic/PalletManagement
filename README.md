@@ -36,7 +36,7 @@ Generate and print QR code:
     data, locations = readQRcode(testQRimg, False)    
     cv.imwrite('img1.jpg',testQRimg) # save image // open and read it with i.e. mobile phone
 
-Live demo on the sigle camera: 
+Live demo on the single camera: 
 
     import  matplotlib.pyplot as plt
     plt.ion()
