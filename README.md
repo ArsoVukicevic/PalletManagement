@@ -16,6 +16,8 @@ Keywords: Pallets, Logistics 4.0, QR code, Computer vision, Warehouse 4.0
 # Instructions
 Run GrafostilGUI.py - links for instllation of requsted libraries are placed within the code
 
+
+# Instructions of testing particular features
 Import libraries:
 
     from arsGrafostilBiblioteka import *
