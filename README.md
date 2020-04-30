@@ -10,3 +10,6 @@ Although one may find concerns in literature (which question the usage of QR in 
 ![](GUI%20code/images/02%20Architecture%20and%20workflow.jpg)
 
 Keywords: Pallets, Logistics 4.0, QR code, Computer vision, Warehouse 4.0
+
+# Instructions
+Run GrafostilGUI.py - links for instllation of requsted libraries are placed within the code
