@@ -23,9 +23,9 @@ Import libraries:
 
 Set-up camera address and read image: 
 
-     ipAddress      = 'rtsp://admin:password@IP_addrss:port/cam/realmonitor?channel=1@subtype=0' #shape:(2160, 3840, 3)  # IP camera
-     ipAdresaKamere = 0# USB camera
-     cap = cv.VideoCapture(ipAdresaKamere)
+     ipAddress = 'rtsp://admin:password@IP_addrss:port/cam/realmonitor?channel=1@subtype=0' #shape:(2160, 3840, 3)  # IP camera
+     ipAddress = 0# USB camera
+     cap       = cv.VideoCapture(ipAddress)
      return_value, image = cap.read()
 
 Generate and print QR code: 
@@ -33,9 +33,8 @@ Generate and print QR code:
     data      = '0044,04/33'
     testQRimg = generateQR(data, False)
     printQqCodeOnWinPrinter(testQRimg, False)
-    import cv2 as cv
-    cv.imwrite('img1.jpg',testQRimg) # write image
-    data, locations = readQRcode(testQRimg, False)
+    data, locations = readQRcode(testQRimg, False)    
+    cv.imwrite('img1.jpg',testQRimg) # save image // open and read it with i.e. mobile phone
 
 Live demo: 
 
@@ -46,7 +45,7 @@ Live demo:
         img, bzv = cap.read()
         data, locations = readQRcode(img, False)
         plt.clf()
-        plt.imshow(img[0])
+        plt.imshow(img)
         for i in range(len(data)):
             plt.text(locations[i][0].x, lokacijePodataka[i][0].y, data[i], horizontalalignment='left', fontsize=16)
             rectangle = plt.Polygon(locations[i],closed=True, fill=None, edgecolor='r')
