@@ -8,7 +8,7 @@ Transport of products and raw materials with forklifts and pallets still underpi
 Although one may find concerns in literature (which question the usage of QR in logistics), we report that QR-based technology is suitable for the particular use-case, since pallets are static in the inter-warehouse. The reliability was achieved by using multiple IP cameras, which ensures that if one camera fails to detect QR code another one will compensate it. Since surveillance technology is evolving fast and it is becoming more affordable, we conclude that more attention needs to be invested into investigation and adaptation of such technologies to fit the needs of SMEs (since they generate the most of workplaces and GDP in developed countries - but commonly can not afford complex and expensive solutions available on the market). 
 
 ![](GUI%20code/images/02%20Architecture%20and%20workflow.jpg)
-<p style="text-align: center"> Software architecture and UML Workflow diagram of the proposed solution. </p>
+Software architecture and UML Workflow diagram of the proposed solution.
 
 
 
