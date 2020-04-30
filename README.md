@@ -1,5 +1,4 @@
-# PalletManagement
-Warehouse 4.0 solution for the pallet management in SMEs with QR-code, machine vision and IP cameras: A use-case from the printing industry
+# Warehouse 4.0 solution for the pallet management in SMEs with QR-code, machine vision and IP cameras: A use-case from the printing industry
 
 Transport of products and raw materials with forklifts and pallets still underpins the majority of material flow in the global chain supply. Moreover, many companies record losses due to the operators’ inability to timely manage large amounts of pallets. As a use-case, this study considered the needs of a SME from the printing industry - since there are a large number of raw materials that need to be transported during the production process. The aim of this study was to propose and assess an affordable solution for the pallet management with QR code,  open-source software tools and conventional surveillance equipment. 
 
@@ -18,14 +17,19 @@ Keywords: Pallets, Logistics 4.0, QR code, Computer vision, Warehouse 4.0
 Run GrafostilGUI.py - links for instllation of requsted libraries are placed within the code
 
 Import libraries:
+
     from arsGrafostilBiblioteka import *
     import cv2 as cv
+
 Set-up camera address and read image: 
-    ipAddress      = 'rtsp://admin:password@IP_addrss:port/cam/realmonitor?channel=1@subtype=0' #shape:(2160, 3840, 3)  # IP camera
+
+     ipAddress      = 'rtsp://admin:password@IP_addrss:port/cam/realmonitor?channel=1@subtype=0' #shape:(2160, 3840, 3)  # IP camera
      ipAdresaKamere = 0# USB camera
      cap = cv.VideoCapture(ipAdresaKamere)
      return_value, image = cap.read()
-Generate and print QR code:    
+
+Generate and print QR code: 
+
     data      = '0044,04/33'
     testQRimg = generateQR(data, False)
     printQqCodeOnWinPrinter(testQRimg, False)
@@ -34,6 +38,7 @@ Generate and print QR code:
     data, locations = readQRcode(testQRimg, False)
 
 Live demo: 
+
     import  matplotlib.pyplot as plt
     plt.ion()
     fig = plt.figure(facecolor='white')
@@ -47,5 +52,4 @@ Live demo:
             rectangle = plt.Polygon(locations[i],closed=True, fill=None, edgecolor='r')
             plt.gca().add_patch(rectangle)
         fig.canvas.draw()
-        fig.canvas.flush_events()
-    
+        fig.canvas.flush_events()   
