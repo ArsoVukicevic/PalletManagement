@@ -1,6 +1,6 @@
 # Warehouse 4.0 solution for the pallet management in SMEs with QR-code, machine vision and IP cameras: A use-case from the printing industry
 
-Transport of products and raw materials with forklifts and pallets still underpins the majority of material flow in the global chain supply. Moreover, many companies record losses due to the operators’ inability to timely manage large amounts of pallets. As a use-case, this study considered the needs of a SME from the printing industry - since there are a large number of raw materials that need to be transported during the production process. The aim of this study was to propose and assess an affordable solution for the pallet management with QR code,  open-source software tools and conventional surveillance equipment. 
+Transport of products and raw materials with forklifts and pallets still underpins the majority of material flow in campanies. Moreover, many companies record losses due to the operators’ inability to timely manage large amounts of pallets. As a use-case, this study considered the needs of a SME from the printing industry - since there are a large number of raw materials that need to be transported during the production process. The aim of this study was to propose and assess an affordable solution for the pallet management with QR code,  open-source software tools and conventional surveillance equipment. 
 
 ![](GUI%20code/images/01%20Overview.jpg)
 
